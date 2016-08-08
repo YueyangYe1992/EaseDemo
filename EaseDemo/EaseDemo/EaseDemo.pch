@@ -1,0 +1,28 @@
+//
+//  EaseDemo.pch
+//  EaseDemo
+//
+//  Created by 叶岳洋 on 16/6/20.
+//  Copyright © 2016年 HL. All rights reserved.
+//
+
+#ifndef EaseDemo_pch
+#define EaseDemo_pch
+#ifdef __OBJC__
+
+#import "EaseUI.h"
+#import "EMSDK.h"
+#import "Masonry.h"
+#import "MBProgressHUD+Add.h"
+
+
+#define apnsName @"EaseDemo"
+#define EaseAppKey @"bjwlbws#easedemo"
+#define ClientId @"YXA6lHpmoDa8EeaUpgX-W-yVEg"
+#define ClientSecret @"YXA6QKwGLBWKsjRvllRcf07c0IhJ5ZE"
+
+#define isLogin @"isLogin"
+
+
+#endif
+#endif /* EaseDemo_pch */
