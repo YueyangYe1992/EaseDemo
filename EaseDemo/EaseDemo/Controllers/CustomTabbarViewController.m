@@ -10,7 +10,7 @@
 #import "ConversationListViewController.h"
 #import "UserListViewController.h"
 #import "SettingViewController.h"
-@interface CustomTabbarViewController () <UITabBarControllerDelegate,EMContactManagerDelegate,EMClientDelegate>
+@interface CustomTabbarViewController () <UITabBarControllerDelegate,EMContactManagerDelegate,EMClientDelegate,EMChatManagerDelegate>
 
 @end
 
@@ -21,6 +21,7 @@
     [self createUI];
     [[EMClient sharedClient] addDelegate:self delegateQueue:nil];
     [[EMClient sharedClient].contactManager addDelegate:self delegateQueue:nil];
+    [[EMClient sharedClient].chatManager addDelegate:self delegateQueue:nil];
 }
 
 -(void)createUI{
@@ -97,6 +98,12 @@
     NSLog(@"username:%@,message:%@",aUsername,aMessage);
 }
 
+#pragma mark --- EMChatManagerDelegate
+-(void)didUpdateConversationList:(NSArray *)aConversationList{
+    [self setupUnreadMessageCount];
+    ConversationListViewController *vc = [self.viewControllers objectAtIndex:0];
+    [vc tableViewDidTriggerHeaderRefresh];
+}
 
 
 /*

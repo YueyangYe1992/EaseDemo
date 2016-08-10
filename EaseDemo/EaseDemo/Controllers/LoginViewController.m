@@ -66,6 +66,8 @@
     
     self.passwordTF = [[UITextField alloc] init];
     self.passwordTF.placeholder = @"密码";
+    //密码键盘
+    self.passwordTF.secureTextEntry = YES;
     [self.view addSubview:self.passwordTF];
     [self.passwordTF mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(userNameImage.mas_right).offset(20);
@@ -200,9 +202,14 @@
 
 
 #pragma mark --- UITextFieldDelegate
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    return YES;
+}
 
-
-
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
