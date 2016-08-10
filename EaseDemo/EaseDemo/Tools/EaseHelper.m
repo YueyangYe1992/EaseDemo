@@ -29,11 +29,19 @@ static EaseHelper *helper = nil;
     return self;
 }
 
+
+
 -(void)dealloc{
     [[EMClient sharedClient] removeDelegate:self];
     [[EMClient sharedClient].contactManager removeDelegate:self];
-    [EMClient sharedClient].chatManager removeDelegate:self];
+    [[EMClient sharedClient].chatManager removeDelegate:self];
 }
+
+#pragma mark --- ChatManagerDelegate
+-(void)didUpdateConversationList:(NSArray *)aConversationList{
+    
+}
+
 
 
 @end

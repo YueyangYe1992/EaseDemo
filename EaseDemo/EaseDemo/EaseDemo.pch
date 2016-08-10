@@ -14,7 +14,7 @@
 #import "EMSDK.h"
 #import "Masonry.h"
 #import "MBProgressHUD+Add.h"
-
+#import "EaseHelper.h"
 
 #define apnsName @"EaseDemo"
 #define EaseAppKey @"bjwlbws#easedemo"

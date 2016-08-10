@@ -7,7 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ConversationListViewController.h"
+#import "UserListViewController.h"
+#import "SettingViewController.h"
+
 
 @interface EaseHelper : NSObject <EMChatManagerDelegate,EMContactManagerDelegate,EMClientDelegate>
+@property (nonatomic,strong) ConversationListViewController *conversationVC;
+@property (nonatomic,strong) UserListViewController *userListVC;
+@property (nonatomic,strong) SettingViewController *settingVC;
+
 +(instancetype)shareHelper;
 @end

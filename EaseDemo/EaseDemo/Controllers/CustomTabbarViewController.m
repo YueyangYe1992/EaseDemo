@@ -10,7 +10,7 @@
 #import "ConversationListViewController.h"
 #import "UserListViewController.h"
 #import "SettingViewController.h"
-@interface CustomTabbarViewController () <UITabBarControllerDelegate,EMContactManagerDelegate,EMClientDelegate,EMChatManagerDelegate>
+@interface CustomTabbarViewController () <UITabBarControllerDelegate>
 
 @end
 
@@ -19,9 +19,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self createUI];
-    [[EMClient sharedClient] addDelegate:self delegateQueue:nil];
-    [[EMClient sharedClient].contactManager addDelegate:self delegateQueue:nil];
-    [[EMClient sharedClient].chatManager addDelegate:self delegateQueue:nil];
 }
 
 -(void)createUI{
@@ -92,11 +89,7 @@
     [[EMClient sharedClient].contactManager removeDelegate:self];
 }
 
-#pragma mark --- EMContactManagerDelegate
--(void)didReceiveFriendInvitationFromUsername:(NSString *)aUsername message:(NSString *)aMessage{
-    NSLog(@"监听好友请求");
-    NSLog(@"username:%@,message:%@",aUsername,aMessage);
-}
+
 
 #pragma mark --- EMChatManagerDelegate
 -(void)didUpdateConversationList:(NSArray *)aConversationList{
