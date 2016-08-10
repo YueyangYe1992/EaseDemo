@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A2ABA7664F4776BCEFB98F01 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D11CC3490CE1E97A23DE80 /* libPods.a */; };
+		EC2E22211D5AF13F003C3373 /* EaseHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2E22201D5AF13F003C3373 /* EaseHelper.m */; };
 		EC6F5BB01D17D27A0047B015 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6F5BAF1D17D27A0047B015 /* main.m */; };
 		EC6F5BB31D17D27A0047B015 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6F5BB21D17D27A0047B015 /* AppDelegate.m */; };
 		EC6F5BBB1D17D27A0047B015 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC6F5BBA1D17D27A0047B015 /* Assets.xcassets */; };
@@ -342,6 +343,8 @@
 		007BCEF9425DB826F832CA20 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		50D11CC3490CE1E97A23DE80 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D890DFC79C591C7C19349F79 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		EC2E221F1D5AF13F003C3373 /* EaseHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EaseHelper.h; sourceTree = "<group>"; };
+		EC2E22201D5AF13F003C3373 /* EaseHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EaseHelper.m; sourceTree = "<group>"; };
 		EC6F5BAB1D17D27A0047B015 /* EaseDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EaseDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC6F5BAF1D17D27A0047B015 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EC6F5BB11D17D27A0047B015 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -850,6 +853,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		EC2E221E1D5AF118003C3373 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				EC2E221F1D5AF13F003C3373 /* EaseHelper.h */,
+				EC2E22201D5AF13F003C3373 /* EaseHelper.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		EC6F5BA21D17D27A0047B015 = {
 			isa = PBXGroup;
 			children = (
@@ -877,6 +889,7 @@
 			children = (
 				EC6F5BB11D17D27A0047B015 /* AppDelegate.h */,
 				EC6F5BB21D17D27A0047B015 /* AppDelegate.m */,
+				EC2E221E1D5AF118003C3373 /* Tools */,
 				EC6F5BEB1D17E1F70047B015 /* EaseUI */,
 				EC6F5D101D17E1F70047B015 /* EaseUIResource */,
 				EC6F5BE71D17E08C0047B015 /* Models */,
@@ -2298,6 +2311,7 @@
 				EC6F5DB11D17E1F70047B015 /* EaseMessageReadManager.m in Sources */,
 				EC6F5D7F1D17E1F70047B015 /* MWCaptionView.m in Sources */,
 				EC6F5D611D17E1F70047B015 /* EMCDDeviceManager+Microphone.m in Sources */,
+				EC2E22211D5AF13F003C3373 /* EaseHelper.m in Sources */,
 				EC6F5DBD1D17E1F70047B015 /* EaseUserCell.m in Sources */,
 				EC6F5DC71D17E1F70047B015 /* EaseBubbleView+Video.m in Sources */,
 				EC6F5D711D17E1F70047B015 /* MJRefreshAutoGifFooter.m in Sources */,
