@@ -10,12 +10,14 @@
 #import "ConversationListViewController.h"
 #import "UserListViewController.h"
 #import "SettingViewController.h"
-
+#import "CustomTabbarViewController.h"
+#import "ChatViewController.h"
 
 @interface EaseHelper : NSObject <EMChatManagerDelegate,EMContactManagerDelegate,EMClientDelegate>
-@property (nonatomic,strong) ConversationListViewController *conversationVC;
-@property (nonatomic,strong) UserListViewController *userListVC;
-@property (nonatomic,strong) SettingViewController *settingVC;
-
+@property (nonatomic,weak) ConversationListViewController *conversationVC;
+@property (nonatomic,weak) UserListViewController *userListVC;
+@property (nonatomic,weak) SettingViewController *settingVC;
+@property (nonatomic,weak) CustomTabbarViewController *tabbarVC;
+@property (nonatomic,weak) ChatViewController *chatVC;
 +(instancetype)shareHelper;
 @end

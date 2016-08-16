@@ -320,6 +320,7 @@
 		ECB603A01D489DB00037862E /* tabbarSelectBg.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB603301D489DB00037862E /* tabbarSelectBg.png */; };
 		ECB603A11D489DB00037862E /* tabbarSelectBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB603311D489DB00037862E /* tabbarSelectBg@2x.png */; };
 		ECB603A81D489FBE0037862E /* AddFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB603A71D489FBE0037862E /* AddFriendViewController.m */; };
+		ECBDBEED1D61AC6800BF96DD /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECBDBEEC1D61AC6800BF96DD /* ChatViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -806,6 +807,8 @@
 		ECB603311D489DB00037862E /* tabbarSelectBg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbarSelectBg@2x.png"; sourceTree = "<group>"; };
 		ECB603A61D489FBE0037862E /* AddFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFriendViewController.h; sourceTree = "<group>"; };
 		ECB603A71D489FBE0037862E /* AddFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFriendViewController.m; sourceTree = "<group>"; };
+		ECBDBEEB1D61AC6800BF96DD /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		ECBDBEEC1D61AC6800BF96DD /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1875,6 +1878,8 @@
 			children = (
 				ECB12D5A1D43449700DD86AA /* ConversationListViewController.h */,
 				ECB12D5B1D43449700DD86AA /* ConversationListViewController.m */,
+				ECBDBEEB1D61AC6800BF96DD /* ChatViewController.h */,
+				ECBDBEEC1D61AC6800BF96DD /* ChatViewController.m */,
 			);
 			path = ConversationList;
 			sourceTree = "<group>";
@@ -2369,6 +2374,7 @@
 				EC6F5DBE1D17E1F70047B015 /* EaseBaseMessageCell.m in Sources */,
 				EC6F5D901D17E1F70047B015 /* NSData+EMImageContentType.m in Sources */,
 				EC6F5D9E1D17E1F70047B015 /* PSTCollectionViewItemKey.m in Sources */,
+				ECBDBEED1D61AC6800BF96DD /* ChatViewController.m in Sources */,
 				EC6F5DB01D17E1F70047B015 /* EaseConvertToCommonEmoticonsHelper.m in Sources */,
 				EC6F5D7C1D17E1F70047B015 /* UIScrollView+MJExtension.m in Sources */,
 				EC6F5D701D17E1F70047B015 /* MJRefreshHeader.m in Sources */,

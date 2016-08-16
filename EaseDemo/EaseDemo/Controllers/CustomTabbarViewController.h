@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface CustomTabbarViewController : UITabBarController
-
+-(void)setupUnreadMessageCount;
 @end

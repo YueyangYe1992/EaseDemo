@@ -19,6 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self createUI];
+    [EaseHelper shareHelper].conversationVC = [self.viewControllers objectAtIndex:0];
+    [EaseHelper shareHelper].tabbarVC = self;
 }
 
 -(void)createUI{
@@ -84,19 +86,6 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)viewWillDisappear:(BOOL)animated{
-    //移除好友回调
-    [[EMClient sharedClient].contactManager removeDelegate:self];
-}
-
-
-
-#pragma mark --- EMChatManagerDelegate
--(void)didUpdateConversationList:(NSArray *)aConversationList{
-    [self setupUnreadMessageCount];
-    ConversationListViewController *vc = [self.viewControllers objectAtIndex:0];
-    [vc tableViewDidTriggerHeaderRefresh];
-}
 
 
 /*
